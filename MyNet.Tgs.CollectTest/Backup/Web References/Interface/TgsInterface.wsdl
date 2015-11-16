@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="TgsInterface" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://pgatms.xicp.net:8732/MyNet.Tgs.Service.Interface?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://pgatms.xicp.net:8732/MyNet.Tgs.Service.Interface?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://pgatms.xicp.net:8732/MyNet.Tgs.Service.Interface?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITgsInterface_WriteImageObjectOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteImageObjectOut" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_WriteImageObjectOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteImageObjectOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_SendSMS_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendSMS" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_SendSMS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetDataTable_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataTable" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetDataTable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_ExecuteNonQuery_InputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQuery" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_ExecuteNonQuery_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ExecuteNonQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_CarPlateRecog_InputMessage">
+    <wsdl:part name="parameters" element="tns:CarPlateRecog" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_CarPlateRecog_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CarPlateRecogResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InPassCarInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InPassCarInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InPassCarInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InPassCarInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InPassCarToPeccancy_InputMessage">
+    <wsdl:part name="parameters" element="tns:InPassCarToPeccancy" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InPassCarToPeccancy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InPassCarToPeccancyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InPeccancyInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InPeccancyInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InPeccancyInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InPeccancyInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InBlacklistInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InBlacklistInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InBlacklistInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InBlacklistInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InChecklessInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InChecklessInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InChecklessInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InChecklessInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_IntExtralistInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:IntExtralistInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_IntExtralistInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IntExtralistInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InSuspicionInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InSuspicionInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InSuspicionInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InSuspicionInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_RevokeSuspicionInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:RevokeSuspicionInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_RevokeSuspicionInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RevokeSuspicionInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InEventInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InEventInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InEventInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InEventInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetLocationInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetLocationInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLocationInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetPassCarInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPassCarInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetPassCarInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPassCarInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetPeccancyInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeccancyInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetPeccancyInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeccancyInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetPeccancyNoCheckInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeccancyNoCheckInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetPeccancyNoCheckInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPeccancyNoCheckInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_UpdatePeccancyInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePeccancyInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_UpdatePeccancyInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePeccancyInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_UpdateVioPeccancyInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVioPeccancyInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_UpdateVioPeccancyInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateVioPeccancyInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetVioPeccancyNoCheckInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVioPeccancyNoCheckInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetVioPeccancyNoCheckInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVioPeccancyNoCheckInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetAlarmInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlarmInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetAlarmInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlarmInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_UpdataDeviceState_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdataDeviceState" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_UpdataDeviceState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdataDeviceStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InViolationInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InViolationInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_InViolationInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InViolationInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetViolationInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetViolationInfo" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetViolationInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetViolationInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetDeviceList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceList" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_GetDeviceList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeviceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_TgsServiceTest_InputMessage">
+    <wsdl:part name="parameters" element="tns:TgsServiceTest" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_TgsServiceTest_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TgsServiceTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_QueryObjectOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryObjectOut" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_QueryObjectOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryObjectOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_WriteObjectOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:WriteObjectOut" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_WriteObjectOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WriteObjectOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_QueryImageObjectOut_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryImageObjectOut" />
+  </wsdl:message>
+  <wsdl:message name="ITgsInterface_QueryImageObjectOut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryImageObjectOutResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITgsInterface">
+    <wsdl:operation name="WriteImageObjectOut">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/WriteImageObjectOut" message="tns:ITgsInterface_WriteImageObjectOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/WriteImageObjectOutResponse" message="tns:ITgsInterface_WriteImageObjectOut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/SendSMS" message="tns:ITgsInterface_SendSMS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/SendSMSResponse" message="tns:ITgsInterface_SendSMS_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataTable">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/GetDataTable" message="tns:ITgsInterface_GetDataTable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/GetDataTableResponse" message="tns:ITgsInterface_GetDataTable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQuery">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/ExecuteNonQuery" message="tns:ITgsInterface_ExecuteNonQuery_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/ExecuteNonQueryResponse" message="tns:ITgsInterface_ExecuteNonQuery_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CarPlateRecog">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/CarPlateRecog" message="tns:ITgsInterface_CarPlateRecog_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/CarPlateRecogResponse" message="tns:ITgsInterface_CarPlateRecog_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InPassCarInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/InPassCarInfo" message="tns:ITgsInterface_InPassCarInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/InPassCarInfoResponse" message="tns:ITgsInterface_InPassCarInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InPassCarToPeccancy">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/InPassCarToPeccancy" message="tns:ITgsInterface_InPassCarToPeccancy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/InPassCarToPeccancyResponse" message="tns:ITgsInterface_InPassCarToPeccancy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InPeccancyInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/InPeccancyInfo" message="tns:ITgsInterface_InPeccancyInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/InPeccancyInfoResponse" message="tns:ITgsInterface_InPeccancyInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InBlacklistInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/InBlacklistInfo" message="tns:ITgsInterface_InBlacklistInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/InBlacklistInfoResponse" message="tns:ITgsInterface_InBlacklistInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InChecklessInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/InChecklessInfo" message="tns:ITgsInterface_InChecklessInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/InChecklessInfoResponse" message="tns:ITgsInterface_InChecklessInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IntExtralistInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/IntExtralistInfo" message="tns:ITgsInterface_IntExtralistInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/IntExtralistInfoResponse" message="tns:ITgsInterface_IntExtralistInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InSuspicionInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/InSuspicionInfo" message="tns:ITgsInterface_InSuspicionInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/InSuspicionInfoResponse" message="tns:ITgsInterface_InSuspicionInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RevokeSuspicionInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/RevokeSuspicionInfo" message="tns:ITgsInterface_RevokeSuspicionInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/RevokeSuspicionInfoResponse" message="tns:ITgsInterface_RevokeSuspicionInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InEventInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/InEventInfo" message="tns:ITgsInterface_InEventInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/InEventInfoResponse" message="tns:ITgsInterface_InEventInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/GetLocationInfo" message="tns:ITgsInterface_GetLocationInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/GetLocationInfoResponse" message="tns:ITgsInterface_GetLocationInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPassCarInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/GetPassCarInfo" message="tns:ITgsInterface_GetPassCarInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/GetPassCarInfoResponse" message="tns:ITgsInterface_GetPassCarInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeccancyInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/GetPeccancyInfo" message="tns:ITgsInterface_GetPeccancyInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/GetPeccancyInfoResponse" message="tns:ITgsInterface_GetPeccancyInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPeccancyNoCheckInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/GetPeccancyNoCheckInfo" message="tns:ITgsInterface_GetPeccancyNoCheckInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/GetPeccancyNoCheckInfoResponse" message="tns:ITgsInterface_GetPeccancyNoCheckInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePeccancyInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/UpdatePeccancyInfo" message="tns:ITgsInterface_UpdatePeccancyInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/UpdatePeccancyInfoResponse" message="tns:ITgsInterface_UpdatePeccancyInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVioPeccancyInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/UpdateVioPeccancyInfo" message="tns:ITgsInterface_UpdateVioPeccancyInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/UpdateVioPeccancyInfoResponse" message="tns:ITgsInterface_UpdateVioPeccancyInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVioPeccancyNoCheckInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/GetVioPeccancyNoCheckInfo" message="tns:ITgsInterface_GetVioPeccancyNoCheckInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/GetVioPeccancyNoCheckInfoResponse" message="tns:ITgsInterface_GetVioPeccancyNoCheckInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlarmInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/GetAlarmInfo" message="tns:ITgsInterface_GetAlarmInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/GetAlarmInfoResponse" message="tns:ITgsInterface_GetAlarmInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdataDeviceState">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/UpdataDeviceState" message="tns:ITgsInterface_UpdataDeviceState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/UpdataDeviceStateResponse" message="tns:ITgsInterface_UpdataDeviceState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InViolationInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/InViolationInfo" message="tns:ITgsInterface_InViolationInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/InViolationInfoResponse" message="tns:ITgsInterface_InViolationInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetViolationInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/GetViolationInfo" message="tns:ITgsInterface_GetViolationInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/GetViolationInfoResponse" message="tns:ITgsInterface_GetViolationInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/GetDeviceList" message="tns:ITgsInterface_GetDeviceList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/GetDeviceListResponse" message="tns:ITgsInterface_GetDeviceList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TgsServiceTest">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/TgsServiceTest" message="tns:ITgsInterface_TgsServiceTest_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/TgsServiceTestResponse" message="tns:ITgsInterface_TgsServiceTest_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryObjectOut">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/QueryObjectOut" message="tns:ITgsInterface_QueryObjectOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/QueryObjectOutResponse" message="tns:ITgsInterface_QueryObjectOut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteObjectOut">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/WriteObjectOut" message="tns:ITgsInterface_WriteObjectOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/WriteObjectOutResponse" message="tns:ITgsInterface_WriteObjectOut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryImageObjectOut">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITgsInterface/QueryImageObjectOut" message="tns:ITgsInterface_QueryImageObjectOut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITgsInterface/QueryImageObjectOutResponse" message="tns:ITgsInterface_QueryImageObjectOut_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITgsInterface" type="tns:ITgsInterface">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WriteImageObjectOut">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/WriteImageObjectOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/SendSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataTable">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/GetDataTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteNonQuery">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/ExecuteNonQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CarPlateRecog">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/CarPlateRecog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InPassCarInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/InPassCarInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InPassCarToPeccancy">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/InPassCarToPeccancy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InPeccancyInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/InPeccancyInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InBlacklistInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/InBlacklistInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InChecklessInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/InChecklessInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IntExtralistInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/IntExtralistInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InSuspicionInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/InSuspicionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RevokeSuspicionInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/RevokeSuspicionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InEventInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/InEventInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/GetLocationInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPassCarInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/GetPassCarInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeccancyInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/GetPeccancyInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPeccancyNoCheckInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/GetPeccancyNoCheckInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePeccancyInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/UpdatePeccancyInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateVioPeccancyInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/UpdateVioPeccancyInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVioPeccancyNoCheckInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/GetVioPeccancyNoCheckInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlarmInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/GetAlarmInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdataDeviceState">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/UpdataDeviceState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InViolationInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/InViolationInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetViolationInfo">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/GetViolationInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeviceList">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/GetDeviceList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TgsServiceTest">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/TgsServiceTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryObjectOut">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/QueryObjectOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteObjectOut">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/WriteObjectOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryImageObjectOut">
+      <soap:operation soapAction="http://tempuri.org/ITgsInterface/QueryImageObjectOut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TgsInterface">
+    <wsdl:port name="BasicHttpBinding_ITgsInterface" binding="tns:BasicHttpBinding_ITgsInterface">
+      <soap:address location="http://pgatms.xicp.net:8732/MyNet.Tgs.Service.Interface" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MyNet.Tgs.CollectTest.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ImagePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)"> D:\web\pic</Value>
+    </Setting>
+    <Setting Name="FileFlag" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">24</Value>
+    </Setting>
+    <Setting Name="StartIndex" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="KKid" Type="System.String" Scope="User">
+      <Value Profile="(Default)">100000008745</Value>
+    </Setting>
+    <Setting Name="HttpHead" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://127.0.0.1/web/pic/</Value>
+    </Setting>
+    <Setting Name="HphmHead" Type="System.String" Scope="User">
+      <Value Profile="(Default)">鲁</Value>
+    </Setting>
+    <Setting Name="MyNet_Tgs_CollectTest_Interface_TgsInterface" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://pgatms.xicp.net:8732/MyNet.Tgs.Service.Interface</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

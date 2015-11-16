@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://pgatms.xicp.net:8732/MyNet.Tgs.Service.Interface?wsdl" filename="TgsInterface.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://pgatms.xicp.net:8732/MyNet.Tgs.Service.Interface?xsd=xsd0" filename="MyNet.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://pgatms.xicp.net:8732/MyNet.Tgs.Service.Interface?disco" filename="MyNet.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://pgatms.xicp.net:8732/MyNet.Tgs.Service.Interface?xsd=xsd1" filename="MyNet0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://pgatms.xicp.net:8732/MyNet.Tgs.Service.Interface?xsd=xsd2" filename="MyNet1.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

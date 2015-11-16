@@ -1,0 +1,9 @@
+D:\重庆渝北电子警察数据接入\渝北WEBSERVIC接入\MyNet.Tgs.CollectTest\Backup\bin\Debug\MyNet.Tgs.CollectTest.exe.config
+D:\重庆渝北电子警察数据接入\渝北WEBSERVIC接入\MyNet.Tgs.CollectTest\Backup\bin\Debug\MyNet.Tgs.CollectTest.exe
+D:\重庆渝北电子警察数据接入\渝北WEBSERVIC接入\MyNet.Tgs.CollectTest\Backup\bin\Debug\MyNet.Tgs.CollectTest.pdb
+D:\重庆渝北电子警察数据接入\渝北WEBSERVIC接入\MyNet.Tgs.CollectTest\Backup\obj\Debug\MyNet.Tgs.CollectTest.csprojResolveAssemblyReference.cache
+D:\重庆渝北电子警察数据接入\渝北WEBSERVIC接入\MyNet.Tgs.CollectTest\Backup\obj\Debug\MyNet.Tgs.CollectTest.FrmMain.resources
+D:\重庆渝北电子警察数据接入\渝北WEBSERVIC接入\MyNet.Tgs.CollectTest\Backup\obj\Debug\MyNet.Tgs.CollectTest.Properties.Resources.resources
+D:\重庆渝北电子警察数据接入\渝北WEBSERVIC接入\MyNet.Tgs.CollectTest\Backup\obj\Debug\MyNet.Tgs.CollectTest.csproj.GenerateResource.Cache
+D:\重庆渝北电子警察数据接入\渝北WEBSERVIC接入\MyNet.Tgs.CollectTest\Backup\obj\Debug\MyNet.Tgs.CollectTest.exe
+D:\重庆渝北电子警察数据接入\渝北WEBSERVIC接入\MyNet.Tgs.CollectTest\Backup\obj\Debug\MyNet.Tgs.CollectTest.pdb
